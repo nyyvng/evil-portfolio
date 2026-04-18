@@ -1,0 +1,24 @@
+:root {
+    --mint-cream: #f0f7f4;
+    --dark-amethyst: #0c0a3e;
+    --granite: #3b5249;
+    --honeydew: #d5e7de;
+    --muted-teal: #7daa92;
+}
+
+body {
+    background-color: var(--mint-cream);
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+#home-link {
+    background-image: url(home-icon.png);
+    background-size: 30px, 30px;
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+}
