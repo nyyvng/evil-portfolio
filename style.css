@@ -161,6 +161,12 @@ main a {
 
 
 
+/* about me stuff */
+#hs {
+    background-size: 10px;
+    width: 10px;
+
+}
 
 
 
@@ -176,10 +182,14 @@ main a {
 
 
 
-
-
-
-
+/* projects section */
+.projects a {
+    text-decoration: none;
+}
+#project-img {
+    width: 90px;
+    background-size: cover;
+}
 
 
 
