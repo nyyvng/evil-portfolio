@@ -6,16 +6,16 @@
     --muted-teal: #7daa92;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: var(--mint-cream);
     margin: 0;
 }
 
 .body-idk {
-    background-color: var(--granite);
-    
-
+    background-color: var(--honeydew);
 }
 
 /* giant chunk of nav styling.... */
@@ -130,7 +130,7 @@ img {
 }
 
 
-
+/* ssecond nav, needs more fixing */
 main {
     background-color: var(--granite);
     display: flex;
@@ -157,6 +157,40 @@ main a {
     height: 40px;
     font-size: 35px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
