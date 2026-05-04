@@ -15,6 +15,7 @@ body {
     background-color: var(--mint-cream);
     margin: 0;
     font-family: "Quicksand", sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .body-idk {
@@ -161,7 +162,7 @@ main {
     justify-content: space-between;
     align-items: center;
     border-radius: 0;
-    margin: 20px 30px;
+    margin: 0;
     padding: 15px 20px;
 }
 
@@ -202,6 +203,7 @@ main h1 a {
     max-width: 700px;
     margin: auto;
     line-height: 1.6;
+    color: var(--dark-amethyst);
 }
 
 .explore-sec button {
@@ -232,6 +234,7 @@ main h1 a {
     max-width: 800px;
     margin: auto;
     line-height: 1.7;
+    color: var(--dark-amethyst);
 }
 
 .action-buttons {
@@ -329,13 +332,18 @@ main h1 a {
     font-size: 18px;
 }
 
-.explore-sec {
-    background-color: var(--honeydew);
+
+.contentcover {
+    background-color: white;
+    margin: 20px 30px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 900px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
-
-
 
 
 
@@ -358,9 +366,80 @@ main h1 a {
 /* about me stuff */
 #hs {
     background-size: 10px;
-    width: 10px;
+    width: 480px;
 
 }
+
+
+.abt-me {
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.abt-me h2 {
+    font-size: 38px;
+    color: var(--dark-amethyst);
+    margin-bottom: 20px;
+}
+
+.abt-me p {
+    font-size: 22px;
+    max-width: 1200px;
+    margin: auto;
+    line-height: 1.6;
+    padding: 10px;
+    padding-bottom: 60px;
+}
+
+
+.cart-relf,
+.awards,
+.certi,
+.years-plan,
+.hobbies {
+    padding: 5px 10px;
+}
+
+.cart-relf p,
+.awards p,
+.certi p,
+.years-plan p,
+.hobbies p {
+    font-size: 22px;
+
+    margin: auto;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+.cart-relf h3,
+.awards h3,
+.certi h3,
+.years-plan h3,
+.hobbies h3 {
+    font-size: 38px;
+    color: var(--dark-amethyst);
+    margin-bottom: 20px;
+
+}
+
+.certi li {
+    font-size: 22px;
+    margin: auto;
+    line-height: 1;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -382,9 +461,380 @@ main h1 a {
 }
 
 #project-img {
-    width: 90px;
     background-size: cover;
 }
+
+.prj {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.prj h2 {
+    font-size: 32px;
+    color: var(--dark-amethyst);
+    margin-bottom: 15px;
+}
+
+.prj p {
+    font-size: 18px;
+    color: var(--dark-amethyst);
+}
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.bioshield,
+.pawpal,
+.fcz,
+.to-do,
+.budget {
+    background-color: var(--muted-teal);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+#project-img {
+    width: 290px;
+    height: 220px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 7px solid var(--granite);
+    border-radius: 30px;
+}
+
+.bioshield h3,
+.pawpal h3,
+.fcz h3,
+.to-do h3,
+.budget h3 {
+    border-right: 4px solid white;
+    padding-right: 20px;
+    margin: 0;
+    font-size: 22px;
+}
+
+.bioshield sub,
+.pawpal sub,
+.fcz sub,
+.to-do sub,
+.budget sub {
+    display: block;
+    padding-left: 20px;
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: white;
+    font-size: 28px;
+}
+
+.projects a {
+    color: white;
+    text-decoration: none;
+}
+
+.bioshield:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+
+.pawpal:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+
+.fcz:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+
+.to-do:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+
+.budget:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+
+.project-desc {
+    font-size: 15px;
+    line-height: 1.5;
+    color: white;
+    margin: 10px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact stuff here */
+.contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-header h2 {
+    font-size: 40px;
+    color: var(--dark-amethyst);
+}
+
+.contact-header p {
+    font-size: 22px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.contact-form label {
+    font-size: 22px;
+    color: var(--dark-amethyst);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 18px;
+    border: 2px solid var(--muted-teal);
+    font-size: 18px;
+    font-family: inherit;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: var(--granite);
+    color: white;
+    border: none;
+    padding: 18px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    transform: scale(1.02);
+    transition: 0.4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BIOHSIELD STUFF DOWN BELOWW */
+#bioshield {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#bioshield h2 {
+    text-align: center;
+    font-size: 42px;
+    color: var(--dark-amethyst);
+    margin-bottom: 50px;
+}
+
+#bioshield h2 a {
+    text-decoration: none;
+    color: var(--dark-amethyst);
+}
+
+.bioshield-top {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.bioshield-top img {
+    width: 500px;
+    border: 4px solid var(--granite);
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.bioshield-desc {
+    font-size: 28px;
+    line-height: 1.6;
+    color: var(--dark-amethyst);
+    margin: 0;
+    max-width: 550px;
+}
+
+#bioshield-experience {
+    padding: 20px 40px 80px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#bioshield-experience h2 {
+    font-size: 34px;
+    color: var(--dark-amethyst);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#bioshield-experience p {
+    font-size: 22px;
+    line-height: 1.8;
+    color: var(--dark-amethyst);
+}
+
+#bioshield-experience li {
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+#bioshield-experience img {
+    width: 550px;
+    display: block;
+    margin: 40px auto;
+    border: 4px solid var(--granite);
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -407,52 +857,107 @@ main h1 a {
 
 /* below here will be the resume stuff !!! */
 
+body.resume-body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6f0ea;
+    color: #1f2d2a;
+    padding: 40px;
+}
+
+nav {
+    margin-bottom: 30px;
+    max-width: 900px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 5px 0 20px;
+    color: #4f6f66;
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    font-size: 14px;
+}
+
+.socials div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 25px;
+    height: 25px;
+}
+
+
+.summary {
+    margin-bottom: 30px;
+}
+
+.summary h4 {
+    border-bottom: 2px solid #8fb3a8;
+    padding-bottom: 5px;
+}
+
+.summary p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.left-side {
+    width: 30%;
+    float: left;
+}
+
+
+
+section {
+    margin-bottom: 25px;
+}
+
 h4 {
-    font-size: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #8fb3a8;
+    padding-bottom: 5px;
 }
 
 h5 {
     font-size: 15px;
+    margin: 5px 0;
 }
 
 sub {
-    font-size: 14px;
+    display: block;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+ul {
+    padding-left: 18px;
+    margin-top: 5px;
 }
 
 li {
     font-size: 13px;
+    margin-bottom: 6px;
 }
 
-h1 {
-    font-size: 35px;
-}
-
-h3 {
-    font-size: 20px;
-}
-
-
-
-.socials {
-    background-size: 10px;
-    width: 10px;
-    height: 10px;
-    font-size: 15px;
+.bottom {
+    clear: both;
+    margin-top: 30px;
     display: flex;
+    gap: 50px;
 }
 
-.summary h4 {
-    font-size: 20px;
-}
-
-.summary p {
-    font-size: 15px;
-
-}
-
-.left-side {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
+.bottom ul {
+    padding-left: 18px;
 }

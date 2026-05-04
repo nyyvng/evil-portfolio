@@ -6,78 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naylia Vang | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
-        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+    </style>
 </head>
 
-<section class="body-idk">
 
 
-    <header>
-        <nav>
-            <a class="nav-link" id="home-link" href="index.html"><img src="home-icon.png"></a>
-            <a class="nav-link" id="about-link" href="abtme.html">About Me</a>
-            <a class="nav-link" id="projects-link" href="projects.html">Projects</a>
-            <a class="nav-link" id="contact-link" href="contact.html">Contact</a>
-            <div class="plus-btn">+</div>
-        </nav>
-    </header>
+<body>
+    <section class="body-idk">
+
+        <header>
+            <nav>
+                <a class="nav-link" id="home-link" href="index.html"><img src="home-icon.png"></a>
+                <a class="nav-link" id="about-link" href="abtme.html">About Me</a>
+                <a class="nav-link" id="projects-link" href="projects.html">Projects</a>
+                <a class="nav-link" id="contact-link" href="contact.html">Contact</a>
+                <div class="plus-btn">+</div>
+            </nav>
+        </header>
+    </section>
 
 
 
 
 
 
-    <body>
+
         <section class="foldercover">
-            <!-- fun nav bar-->
-            <main>
-                <h1><a href="index.html">Naylia Vang</a></h1>
-                <input type="text" id="search" value="Search">
-            </main>
+
+            <section class="contentcover">
+                <!-- fun nav bar-->
+                <main>
+                    <h1><a href="index.html">Naylia Vang</a></h1>
+                    <input type="text" id="search" value="Search">
+                </main>
+                <div class="contact-header">
+                    <h2>Contact Me</h2>
+                    <p>
+                        Have questions, project ideas, or just want to connect?
+                        Send me a message below.
+                    </p>
+                </div>
+
+                <form class="contact-form" action="https://formspree.io/f/mvzdvwyn" method="POST">
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="8" required></textarea>
+
+                    <button type="submit">Send Message</button>
+
+                </form>
 
 
 
-
-
-            <form action="https://formspree.io/f/mvzdvwyn" method="POST">
-                <label>
-                    Your email:
-                    <input type="email" name="email">
-                </label>
-                <label>
-                    Your message:
-                    <textarea name="message"></textarea>
-                </label>
-                <!-- your other form fields go here -->
-                <button type="submit">Send</button>
-            </form>
-
-
-
-            <!-- bottom nav bar-->
-            <section class="bottom-nav">
-                <p>You’ve reached the bottom! This is all I have for now-If you have any questions feel free to ask me!
-                </p>
-                <section class="bottom-socials">
-                    <div class="email">
-                        <img src="mail.png">
-                        nylia.vang1@gmail.com
-                    </div>
-                    <div class="linkedin">
-                        <img src="linkedin.png">
-                        <a href="https://www.linkedin.com/in/nayliavangstudent">nayliavangstudent</a>
-                    </div>
-                    <div class="github">
-                        <img src="github.png">
-                        <a href="https://github.com/nyyvng">nyyvng</a>
+                <!-- bottom nav bar-->
+                <section class="bottom-nav">
+                    <p>You’ve reached the bottom! This is all I have for now-If you have any questions feel free to ask
+                        me!
+                    </p>
+                    <section class="bottom-socials">
+                        <div class="email">
+                            <img src="mail.png">
+                            nylia.vang1@gmail.com
+                        </div>
+                        <div class="linkedin">
+                            <img src="linkedin.png">
+                            <a href="https://www.linkedin.com/in/nayliavangstudent">nayliavangstudent</a>
+                        </div>
+                        <div class="github">
+                            <img src="github.png">
+                            <a href="https://github.com/nyyvng">nyyvng</a>
+                    </section>
                 </section>
             </section>
-        </section>
+</body>
 
-    </body>
+
+
 
 </html>
