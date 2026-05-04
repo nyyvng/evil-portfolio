@@ -26,6 +26,10 @@ body {
 button {
     font-family: inherit;
 }
+button:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
 
 
 .foldercover {
@@ -268,12 +272,13 @@ main h1 a {
 
 .bottom-nav {
     background-color: var(--granite);
-    color: white;
     padding: 40px;
-    margin: 40px 30px 30px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    color: white;
+
 }
 
 .bottom-nav p {
@@ -649,6 +654,7 @@ main h1 a {
     padding: 18px;
     font-size: 20px;
     cursor: pointer;
+    margin-bottom: 90px;
 }
 
 .contact-form button:hover {
@@ -709,13 +715,14 @@ main h1 a {
 
 .bioshield-top img {
     width: 500px;
+    height: 300px;
     border: 4px solid var(--granite);
     border-radius: 20px;
     flex-shrink: 0;
 }
 
 .bioshield-desc {
-    font-size: 28px;
+    font-size: 22px;
     line-height: 1.6;
     color: var(--dark-amethyst);
     margin: 0;
@@ -747,7 +754,191 @@ main h1 a {
 }
 
 #bioshield-experience img {
-    width: 550px;
+    width: 500px;
+    height: 200px;
+    display: block;
+    margin: 40px auto;
+    border: 4px solid var(--granite);
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAWPAL STUFF BELOW */ 
+#pawpal {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#pawpal h2 {
+    text-align: center;
+    font-size: 42px;
+    color: var(--dark-amethyst);
+    margin-bottom: 50px;
+}
+
+#pawpal h2 a {
+    text-decoration: none;
+    color: var(--dark-amethyst);
+}
+
+.pawpal-top {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.pawpal-top img {
+    width: 500px;
+    height: 300px;
+    border: 4px solid var(--granite);
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.pawpal-desc {
+    font-size: 22px;
+    line-height: 1.6;
+    color: var(--dark-amethyst);
+    margin: 0;
+    max-width: 550px;
+}
+
+#pawpal-experience {
+    padding: 20px 40px 80px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#pawpal-experience h2 {
+    font-size: 34px;
+    color: var(--dark-amethyst);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#pawpal-experience p {
+    font-size: 22px;
+    line-height: 1.8;
+    color: var(--dark-amethyst);
+}
+
+#pawpal-experience li {
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+#pawpal-experience img {
+    width: 500px;
+    height: 200px;
+    display: block;
+    margin: 40px auto;
+    border: 4px solid var(--granite);
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FCZ STUFF BELOW */
+#fcz {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#fcz h2 {
+    text-align: center;
+    font-size: 42px;
+    color: var(--dark-amethyst);
+    margin-bottom: 50px;
+}
+
+#fcz h2 a {
+    text-decoration: none;
+    color: var(--dark-amethyst);
+}
+
+.fcz-top {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.fcz-top img {
+    width: 500px;
+    height: 300px;
+    border: 4px solid var(--granite);
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.fcz-desc {
+    font-size: 22px;
+    line-height: 1.6;
+    color: var(--dark-amethyst);
+    margin: 0;
+    max-width: 550px;
+}
+
+#fcz-experience {
+    padding: 20px 40px 80px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#fcz-experience h2 {
+    font-size: 34px;
+    color: var(--dark-amethyst);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#fcz-experience p {
+    font-size: 22px;
+    line-height: 1.8;
+    color: var(--dark-amethyst);
+}
+
+#fcz-experience li {
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+#fcz-experience img {
+    width: 500px;
+    height: 200px;
     display: block;
     margin: 40px auto;
     border: 4px solid var(--granite);
@@ -776,6 +967,79 @@ main h1 a {
 
 
 
+/* TO-DO LIST BELOW */
+#todo {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#todo h2 {
+    text-align: center;
+    font-size: 42px;
+    color: var(--dark-amethyst);
+    margin-bottom: 50px;
+}
+
+#todo h2 a {
+    text-decoration: none;
+    color: var(--dark-amethyst);
+}
+
+.todo-top {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.todo-top img {
+    width: 500px;
+    height: 300px;
+    border: 4px solid var(--granite);
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.todo-desc {
+    font-size: 22px;
+    line-height: 1.6;
+    color: var(--dark-amethyst);
+    margin: 0;
+    max-width: 550px;
+}
+
+#todo-experience {
+    padding: 20px 40px 80px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#todo-experience h2 {
+    font-size: 34px;
+    color: var(--dark-amethyst);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#todo-experience p {
+    font-size: 22px;
+    line-height: 1.8;
+    color: var(--dark-amethyst);
+}
+
+#todo-experience li {
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+#todo-experience img {
+    width: 500px;
+    height: 300px;
+    display: block;
+    margin: 40px auto;
+    border: 4px solid var(--granite);
+    border-radius: 20px;
+}
 
 
 
@@ -785,6 +1049,89 @@ main h1 a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* BUDGET CALCULATOR BELOW */
+#budgetcalc {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#budgetcalc h2 {
+    text-align: center;
+    font-size: 42px;
+    color: var(--dark-amethyst);
+    margin-bottom: 50px;
+}
+
+#budgetcalc h2 a {
+    text-decoration: none;
+    color: var(--dark-amethyst);
+}
+
+.budgetcalc-top {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.budgetcalc-top img {
+    width: 500px;
+    height: 300px;
+    border: 4px solid var(--granite);
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.budgetcalc-desc {
+    font-size: 22px;
+    line-height: 1.6;
+    color: var(--dark-amethyst);
+    margin: 0;
+    max-width: 550px;
+}
+
+#budgetcalc-experience {
+    padding: 20px 40px 80px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#budgetcalc-experience h2 {
+    font-size: 34px;
+    color: var(--dark-amethyst);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#budgetcalc-experience p {
+    font-size: 22px;
+    line-height: 1.8;
+    color: var(--dark-amethyst);
+}
+
+#budgetcalc-experience li {
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+#budgetcalc-experience img {
+    width: 500px;
+    height: 300px;
+    display: block;
+    margin: 40px auto;
+    border: 4px solid var(--granite);
+    border-radius: 20px;
+}
 
 
 
