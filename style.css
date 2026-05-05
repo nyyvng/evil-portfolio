@@ -1526,9 +1526,12 @@ li {
 
     #bioshield a,
     #pawpal a,
-    #fcz a,
     #todo a,
     #budgetcalc a {
+        font-size: 25px;
+    }
+
+    #fcz-header {
         font-size: 25px;
     }
 
