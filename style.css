@@ -1728,4 +1728,8 @@ li {
     .bottom-nav button a {
         font-size: 15px;
     }
+
+    .tech-skills li {
+        margin-left: -25px;
+    }
 }
