@@ -173,7 +173,7 @@ main h1 {
 }
 
 main h1 a {
-    font-size: 28px clamp(1.2rem, 2vw, 1.75rem);
+    font-size: 28px;
     text-decoration: none;
     color: white;
 }
@@ -183,7 +183,7 @@ main h1 a {
     color: white;
     width: 420px;
     height: 45px;
-    font-size: 18px clamp(180px, 40vw, 420px);
+    font-size: 18px;
     border: none;
     padding-left: 15px;
     outline: none;
@@ -195,13 +195,13 @@ main h1 a {
 }
 
 .explore-sec h2 {
-    font-size: 38px clamp(1.8rem, 4vw, 2.5rem);
+    font-size: 38px;
     color: var(--dark-amethyst);
     margin-bottom: 20px;
 }
 
 .explore-sec p {
-    font-size: 22px clamp(1rem, 2vw, 1.4rem);
+    font-size: 22px;
     max-width: 700px;
     margin: auto;
     line-height: 1.6;
@@ -227,12 +227,12 @@ main h1 a {
 }
 
 .more-abt h2 {
-    font-size: 32px clamp(1.5rem, 3vw, 2.2rem);
+    font-size: 32px;
     color: var(--dark-amethyst);
 }
 
 .more-abt p {
-    font-size: 20px clamp(1rem, 2vw, 1.25rem);
+    font-size: 20px;
     max-width: 800px;
     margin: auto;
     line-height: 1.7;
@@ -460,16 +460,6 @@ main h1 a {
 
 
 /* projects section */
-.projects a {
-    text-decoration: none;
-}
-
-#project-img {
-    background-size: cover;
-    width: clamp(220px, 30vw, 290px);
-    height: clamp(160px, 24vw, 220px);
-
-}
 
 .prj {
     text-align: center;
@@ -535,7 +525,6 @@ main h1 a {
 .fcz-top img,
 .todo-top img,
 .budgetcalc-top img {
-    width: clamp(250px, 45vw, 500px);
     height: auto;
 }
 
@@ -544,41 +533,15 @@ main h1 a {
     text-decoration: none;
 }
 
-.bioshield:hover {
-    cursor: pointer;
-    transform: scale(1.01);
-    transition: 0.5s;
-}
-
-.pawpal:hover {
-    cursor: pointer;
-    transform: scale(1.01);
-    transition: 0.5s;
-}
-
-.fcz:hover {
-    cursor: pointer;
-    transform: scale(1.01);
-    transition: 0.5s;
-}
-
-.to-do:hover {
-    cursor: pointer;
-    transform: scale(1.01);
-    transition: 0.5s;
-}
-
-.budget:hover {
-    cursor: pointer;
-    transform: scale(1.01);
-    transition: 0.5s;
-}
-
+.bioshield:hover,
+.pawpal:hover,
+.fcz:hover,
+.to-do:hover,
+.budget:hover,
 .project-desc {
-    font-size: 15px;
-    line-height: 1.5;
-    color: white;
-    margin: 10px 0 0;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: 0.5s;
 }
 
 
@@ -1217,12 +1180,12 @@ main h1 a {
 
 .name-row h1 {
     margin: 0;
-    font-size: 42px clamp(2rem, 5vw, 3rem);
+    font-size: 42px;
 }
 
 .name-row h3 {
     margin: 0;
-    font-size: 20px clamp(1rem, 2vw, 1.5rem);
+    font-size: 20px;
 }
 
 .socials {
@@ -1249,7 +1212,7 @@ main h1 a {
 
 
 .social-item a {
-    font-size: 18px clamp(0.9rem, 1.5vw, 1.1rem);
+    font-size: 18px;
     color: var(--dark-amethyst);
     text-decoration: none;
     line-height: 1.4;
@@ -1287,13 +1250,13 @@ main h1 a {
 }
 
 h4 {
-    font-size: 20px clamp(1rem, 2vw, 1.4rem);
+    font-size: 20px;
     border-bottom: 2px solid var(--muted-teal);
     padding-bottom: 8px;
 }
 
 h5 {
-    font-size: 16px clamp(1.9rem, 1.5vw, 1.1rem);
+    font-size: 16px;
     margin: 10px 0;
 }
 
@@ -1363,20 +1326,15 @@ li {
         flex-wrap: nowrap;
     }
 
+    .nav-link {
+        width: 9px;
+    }
+
     #home-link,
     .plus-btn {
         width: 25px;
         height: 25px;
         padding: 10px;
-    }
-
-    #about-link,
-    #projects-link,
-    #contact-link {
-        width: 110px;
-        height: 25px;
-        padding: 10px;
-        font-size: 14px;
     }
 
     main {
@@ -1392,7 +1350,7 @@ li {
         height: 35px;
         font-size: 14px;
         color: white;
-        
+
     }
 
     .explore-sec h2,
@@ -1464,6 +1422,10 @@ li {
 
     .prj {
         padding: 20px 0;
+    }
+
+    .prj p {
+        font-size: 16px;
     }
 
     .bioshield-top,
@@ -1574,6 +1536,28 @@ li {
         gap: 20px;
     }
 
+    .summary p {
+        font-size: clamp(13px, 5px, 0px);
+
+    }
+
+    .left-side {
+        font-size: clamp(13px, 5px, 0px);
+    }
+
+    .right-side {
+        font-size: clamp(13px, 5px, 0px);
+    }
+
+    .projects {
+        font-size: clamp(13px, 5px, 0px);
+    }
+
+    .bottom {
+        font-size: clamp(13px, 5px, 0px);
+    }
+
+
     .name-row h1 {
         font-size: 28px;
     }
@@ -1623,7 +1607,7 @@ li {
     #about-link,
     #projects-link,
     #contact-link {
-        width: 100px;
+        width: 80px;
         height: 22px;
         padding: 10px;
         font-size: 13px;
@@ -1666,11 +1650,6 @@ li {
         padding: 35px 20px;
     }
 
-    .more-abt h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-
     .more-abt p {
         font-size: 17px;
         line-height: 1.8;
@@ -1700,7 +1679,7 @@ li {
     }
 
     .bottom-nav p {
-        font-size: 15px;
+        font-size: 15px clamp(1rem, 2.5vw, 2rem);
         line-height: 1.8;
         max-width: 100%;
     }
@@ -1728,4 +1707,5 @@ li {
     .tech-skills li {
         margin-left: -25px;
     }
+
 }
