@@ -1353,7 +1353,7 @@ li {
     }
 
     .contentcover {
-        width: 95%;
+        width: 90%;
         padding: 10px;
     }
 
@@ -1444,7 +1444,9 @@ li {
     .to-do h3,
     .budget h3 {
         font-size: 20px;
-        padding-right: 10px;
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 2px solid white;
     }
 
     .project-desc {
@@ -1531,5 +1533,142 @@ li {
 
     h5 {
         font-size: 14px;
+    }
+
+
+    .foldercover {
+        margin: 8px;
+        padding: 8px;
+    }
+
+    .contentcover {
+        width: 95%;
+        padding: 15px;
+    }
+
+    nav {
+        margin: 10px;
+        font-size: 16px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    #home-link,
+    .plus-btn {
+        width: 22px;
+        height: 22px;
+        padding: 10px;
+        flex-shrink: 0;
+    }
+
+    #about-link,
+    #projects-link,
+    #contact-link {
+        width: 100px;
+        height: 22px;
+        padding: 10px;
+        font-size: 13px;
+        flex-shrink: 0;
+    }
+
+    main {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    main h1 a {
+        font-size: 18px;
+    }
+
+    #search {
+        width: 130px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .explore-sec {
+        padding: 30px 15px;
+    }
+
+    .explore-sec h2 {
+        font-size: 26px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+    .explore-sec p {
+        font-size: 17px;
+        line-height: 1.8;
+        padding: 0 10px;
+    }
+
+    .explore-sec button {
+        padding: 14px 30px;
+        font-size: 16px;
+        margin-top: 25px;
+    }
+
+    .more-abt {
+        margin: 30px 15px;
+        padding: 35px 20px;
+    }
+
+    .more-abt h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .more-abt p {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 30px 0 50px;
+    }
+
+    .action-buttons button {
+        width: 220px;
+        padding: 15px;
+    }
+
+    .action-buttons a {
+        font-size: 16px;
+    }
+
+    .bottom-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 20px;
+        gap: 25px;
+    }
+
+    .bottom-nav p {
+        font-size: 15px;
+        line-height: 1.8;
+        max-width: 100%;
+    }
+
+    .bottom-socials {
+        gap: 18px;
+    }
+
+    .email,
+    .linkedin,
+    .github {
+        font-size: 14px;
+        gap: 12px;
+    }
+
+    .bottom-nav button {
+        margin-top: 0;
+        padding: 14px 24px;
+    }
+
+    .bottom-nav button a {
+        font-size: 15px;
     }
 }
