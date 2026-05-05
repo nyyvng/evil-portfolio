@@ -1399,6 +1399,7 @@ li {
     .prj h2,
     .contact-header h2 {
         font-size: 24px;
+        margin-bottom: 25px;
     }
 
     .explore-sec p,
@@ -1468,7 +1469,8 @@ li {
     .fcz-top,
     .todo-top,
     .budgetcalc-top {
-        gap: 20px;
+        gap: 15px;
+        flex-direction: column;
     }
 
     .bioshield-top img,
@@ -1476,8 +1478,8 @@ li {
     .fcz-top img,
     .todo-top img,
     .budgetcalc-top img {
-        width: 220px;
-        height: auto;
+        width: 300px;
+        height: 170px;
     }
 
     .bioshield-desc,
@@ -1488,13 +1490,60 @@ li {
         font-size: 16px;
     }
 
+    #bioshield,
+    #pawpal,
+    #fcz,
+    #todo,
+    #budgetcalc {
+        padding: 20px 10px;
+    }
+
+
+    #bioshield-experience,
+    #pawpal-experience,
+    #fcz-experience,
+    #todo-experience,
+    #budgetcalc-experience {
+        padding: 15px 10px 40px;
+    }
+
     #bioshield-experience img,
     #pawpal-experience img,
     #fcz-experience img,
     #todo-experience img,
     #budgetcalc-experience img {
-        width: 250px;
-        height: auto;
+        width: 350px;
+        height: 160px;
+    }
+
+    #bioshield-experience h2,
+    #pawpal-experience h2,
+    #fcz-experience h2,
+    #todo-experience h2,
+    #budgetcalc-experience h2 {
+        font-size: 22px;
+    }
+
+    #bioshield a,
+    #pawpal a,
+    #fcz a,
+    #todo a,
+    #budgetcalc a {
+        font-size: 25px;
+    }
+
+    #bioshield-experience p,
+    #pawpal-experience p,
+    #fcz-experience p,
+    #todo-experience p,
+    #budgetcalc-experience p,
+    #bioshield-experience li,
+    #pawpal-experience li,
+    #fcz-experience li,
+    #todo-experience li,
+    #budgetcalc-experience li {
+        font-size: 16px;
+        line-height: 1.6;
     }
 
     #hs {
