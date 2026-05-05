@@ -26,6 +26,7 @@ body {
 button {
     font-family: inherit;
 }
+
 button:hover {
     transform: scale(1.05);
     transition: 0.5s;
@@ -63,7 +64,6 @@ nav {
 img {
     height: 100%;
     max-width: 100%;
-    object-fit: cover;
 
 }
 
@@ -79,7 +79,6 @@ img {
 #about-link {
     background-color: var(--muted-teal);
     color: white;
-    display: block;
     height: 35px;
     width: 205px;
     padding: 15px;
@@ -93,7 +92,6 @@ img {
 #projects-link {
     background-color: var(--granite);
     color: white;
-    display: block;
     height: 35px;
     width: 205px;
     padding: 15px;
@@ -107,7 +105,6 @@ img {
 #contact-link {
     background-color: var(--muted-teal);
     color: white;
-    display: block;
     height: 35px;
     width: 205px;
     padding: 15px;
@@ -120,7 +117,6 @@ img {
 
 .plus-btn {
     background-color: var(--honeydew);
-    display: block;
     height: 35px;
     width: 35px;
     padding: 15px;
@@ -177,7 +173,7 @@ main h1 {
 }
 
 main h1 a {
-    font-size: 28px;
+    font-size: 28px clamp(1.2rem, 2vw, 1.75rem);
     text-decoration: none;
     color: white;
 }
@@ -187,7 +183,7 @@ main h1 a {
     color: white;
     width: 420px;
     height: 45px;
-    font-size: 18px;
+    font-size: 18px clamp(180px, 40vw, 420px);
     border: none;
     padding-left: 15px;
     outline: none;
@@ -199,13 +195,13 @@ main h1 a {
 }
 
 .explore-sec h2 {
-    font-size: 38px;
+    font-size: 38px clamp(1.8rem, 4vw, 2.5rem);
     color: var(--dark-amethyst);
     margin-bottom: 20px;
 }
 
 .explore-sec p {
-    font-size: 22px;
+    font-size: 22px clamp(1rem, 2vw, 1.4rem);
     max-width: 700px;
     margin: auto;
     line-height: 1.6;
@@ -231,12 +227,12 @@ main h1 a {
 }
 
 .more-abt h2 {
-    font-size: 32px;
+    font-size: 32px clamp(1.5rem, 3vw, 2.2rem);
     color: var(--dark-amethyst);
 }
 
 .more-abt p {
-    font-size: 20px;
+    font-size: 20px clamp(1rem, 2vw, 1.25rem);
     max-width: 800px;
     margin: auto;
     line-height: 1.7;
@@ -274,7 +270,6 @@ main h1 a {
 
 .bottom-nav {
     background-color: var(--granite);
-    transform: translateY(20px);
     padding: 40px;
     display: flex;
     align-items: center;
@@ -351,6 +346,7 @@ main h1 a {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    width: clamp(320px, 90vw, 1100px);
 }
 
 
@@ -470,6 +466,9 @@ main h1 a {
 
 #project-img {
     background-size: cover;
+    width: clamp(220px, 30vw, 290px);
+    height: clamp(160px, 24vw, 220px);
+
 }
 
 .prj {
@@ -530,18 +529,14 @@ main h1 a {
     font-size: 22px;
 }
 
-.bioshield sub,
-.pawpal sub,
-.fcz sub,
-.to-do sub,
-.budget sub {
-    display: block;
-    padding-left: 20px;
-    margin-top: 15px;
-    font-size: 15px;
-    line-height: 1.5;
-    color: white;
-    font-size: 28px;
+
+.bioshield-top img,
+.pawpal-top img,
+.fcz-top img,
+.todo-top img,
+.budgetcalc-top img {
+    width: clamp(250px, 45vw, 500px);
+    height: auto;
 }
 
 .projects a {
@@ -781,7 +776,7 @@ main h1 a {
 
 
 
-/* PAWPAL STUFF BELOW */ 
+/* PAWPAL STUFF BELOW */
 #pawpal {
     padding: 40px;
     max-width: 1200px;
@@ -1206,108 +1201,324 @@ main h1 a {
 
 
 /* below here will be the resume stuff !!! */
-
-body.resume-body {
-    font-family: Arial, sans-serif;
+.resume-page {
     background-color: var(--mint-cream);
-    color: var(--dark-amethyst);
 }
 
-nav {
-    margin-bottom: 0px;
+.resume-header {
+    padding: 30px 20px;
 }
 
-h1 {
-    font-size: 36px;
+.name-row {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.name-row h1 {
     margin: 0;
-    margin-bottom: 50px;
+    font-size: 42px clamp(2rem, 5vw, 3rem);
 }
 
-h3 {
-    font-size: 18px;
-    margin: 5px 0 40px 10px;
-    color: var(--granite);
-
+.name-row h3 {
+    margin: 0;
+    font-size: 20px clamp(1rem, 2vw, 1.5rem);
 }
 
 .socials {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
-    font-size: 14px;
-    text-decoration: none;
+    gap: 20px 40px;
+    margin-top: 25px;
+    align-items: center;
 }
 
-.socials div {
+.social-item {
     display: flex;
     align-items: center;
-    gap: 5px;
-    width: 190px;
-    height: 20px;
+    gap: 10px;
+    min-width: 220px;
 }
 
+.social-item img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+.social-item a {
+    font-size: 18px clamp(0.9rem, 1.5vw, 1.1rem);
+    color: var(--dark-amethyst);
+    text-decoration: none;
+    line-height: 1.4;
+}
+
+.social-item a:hover {
+    text-decoration: underline;
+}
 
 .summary {
-    margin-bottom: 30px;
-}
-
-.summary h4 {
-    border-bottom: 2px solid var(--muted-teal);
-    padding-bottom: 5px;
+    padding: 0 20px;
 }
 
 .summary p {
-    font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.7;
+}
+
+.resume-layout {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
 }
 
 .left-side {
     width: 30%;
-    float: left;
 }
 
+.right-side {
+    width: 70%;
+}
 
-
-section {
-    margin-bottom: 25px;
+.left-side section,
+.right-side section {
+    margin-bottom: 35px;
 }
 
 h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 20px clamp(1rem, 2vw, 1.4rem);
     border-bottom: 2px solid var(--muted-teal);
-    padding-bottom: 0px;
+    padding-bottom: 8px;
 }
 
 h5 {
-    font-size: 15px;
-    margin: 5px 0;
+    font-size: 16px clamp(1.9rem, 1.5vw, 1.1rem);
+    margin: 10px 0;
 }
 
 sub {
     display: block;
-    font-size: 13px;
-    color: var(--granite);
-    margin-bottom: 5px;
-}
-
-ul {
-    padding-left: 18px;
-    margin-top: 5px;
+    margin-bottom: 8px;
 }
 
 li {
-    font-size: 13px;
-    margin-bottom: 6px;
+    line-height: 1.7;
 }
 
 .bottom {
-    clear: both;
-    margin-top: 30px;
     display: flex;
-    gap: 50px;
+    gap: 60px;
+    padding: 20px;
+    border-top: 2px solid var(--muted-teal);
 }
 
-.bottom ul {
-    padding-left: 18px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QEUIRES */
+@media (max-width: 768px) {
+
+    .foldercover {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .contentcover {
+        width: 95%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    nav {
+        font-size: 18px;
+        margin: 10px 15px 0;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    #home-link,
+    .plus-btn {
+        width: 25px;
+        height: 25px;
+        padding: 10px;
+    }
+
+    #about-link,
+    #projects-link,
+    #contact-link {
+        width: 120px;
+        height: 25px;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    main {
+        padding: 12px 15px;
+    }
+
+    main h1 a {
+        font-size: 20px;
+    }
+
+    #search {
+        width: 180px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .explore-sec h2,
+    .more-abt h2,
+    .abt-me h2,
+    .prj h2,
+    .contact-header h2 {
+        font-size: 24px;
+    }
+
+    .explore-sec p,
+    .more-abt p,
+    .abt-me p,
+    .contact-header p,
+    .cart-relf p,
+    .awards p,
+    .certi p,
+    .years-plan p,
+    .hobbies p {
+        font-size: 16px;
+    }
+
+    .explore-sec button,
+    .action-buttons button,
+    .bottom-nav button,
+    .contact-form button {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .bioshield,
+    .pawpal,
+    .fcz,
+    .to-do,
+    .budget {
+        padding: 12px;
+        gap: 15px;
+    }
+
+    #project-img {
+        width: 160px;
+        height: 120px;
+    }
+
+    .bioshield h3,
+    .pawpal h3,
+    .fcz h3,
+    .to-do h3,
+    .budget h3 {
+        font-size: 18px;
+        padding-right: 10px;
+    }
+
+    .project-desc {
+        font-size: 14px;
+    }
+
+    .bioshield-top,
+    .pawpal-top,
+    .fcz-top,
+    .todo-top,
+    .budgetcalc-top {
+        gap: 20px;
+    }
+
+    .bioshield-top img,
+    .pawpal-top img,
+    .fcz-top img,
+    .todo-top img,
+    .budgetcalc-top img {
+        width: 220px;
+        height: auto;
+    }
+
+    .bioshield-desc,
+    .pawpal-desc,
+    .fcz-desc,
+    .todo-desc,
+    .budgetcalc-desc {
+        font-size: 16px;
+    }
+
+    #bioshield-experience img,
+    #pawpal-experience img,
+    #fcz-experience img,
+    #todo-experience img,
+    #budgetcalc-experience img {
+        width: 250px;
+        height: auto;
+    }
+
+    #hs {
+        width: 220px;
+        height: auto;
+    }
+
+    .bottom-nav {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .bottom-nav p {
+        font-size: 14px;
+    }
+
+    .resume-layout {
+        gap: 20px;
+    }
+
+    .name-row h1 {
+        font-size: 28px;
+    }
+
+    .name-row h3 {
+        font-size: 16px;
+    }
+
+    .social-item a {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
 }
