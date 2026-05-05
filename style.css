@@ -1524,6 +1524,14 @@ li {
         font-size: 22px;
     }
 
+    #bioshield h2,
+    #pawpal h2,
+    #fcz h2,
+    #todo h2,
+    #budgetcalc h2 {
+        font-size: 22px;
+    }
+
     #bioshield a,
     #pawpal a,
     #todo a,
@@ -1531,9 +1539,6 @@ li {
         font-size: 25px;
     }
 
-    #fcz-header {
-        font-size: 25px;
-    }
 
     #bioshield-experience p,
     #pawpal-experience p,
