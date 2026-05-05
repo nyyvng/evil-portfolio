@@ -1388,9 +1388,11 @@ li {
     }
 
     #search {
-        width: 140px;
+        width: 130px;
         height: 35px;
         font-size: 14px;
+        color: white;
+        
     }
 
     .explore-sec h2,
@@ -1635,12 +1637,6 @@ li {
 
     main h1 a {
         font-size: 18px;
-    }
-
-    #search {
-        width: 130px;
-        height: 35px;
-        font-size: 14px;
     }
 
     .explore-sec {
