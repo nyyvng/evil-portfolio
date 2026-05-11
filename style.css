@@ -192,6 +192,7 @@ main h1 a {
 .explore-sec {
     text-align: center;
     padding: 5px 0px;
+    padding-bottom: 10pc;
 }
 
 .explore-sec h2 {
@@ -224,6 +225,7 @@ main h1 a {
     border-top: 3px solid var(--dark-amethyst);
     margin: 50px 50px;
     padding: 60px 40px;
+    padding-top: 10pc;
 }
 
 .more-abt h2 {
@@ -244,6 +246,7 @@ main h1 a {
     justify-content: center;
     gap: 40px;
     margin: 40px 0 80px;
+    padding-bottom: 10pc;
 }
 
 .action-buttons button {
@@ -256,6 +259,26 @@ main h1 a {
     color: white;
     text-decoration: none;
     font-size: 20px;
+}
+
+#ab { /* does not work for now */
+    view-timeline: ab;
+    animation-timeline: ab 1s ease-in-out;
+    animation-name: fadeIn;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+
+    @keyframes ab {
+        from {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+
+        to {
+            opacity: 1;
+            transform: scaleX(1);
+        }
+    }
 }
 
 
