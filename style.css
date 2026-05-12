@@ -147,7 +147,7 @@ img {
     flex-direction: column;
     border-radius: 0 0 18px 18px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-menu a {
@@ -313,7 +313,9 @@ main h1 a {
     animation: fade linear both;
     animation-timeline: view();
     animation-range: entry 5% cover 35%;
-} /* works?? */
+}
+
+/* works?? */
 
 @keyframes fade {
     to {
@@ -1405,8 +1407,7 @@ li {
         width: 9px;
     }
 
-    #home-link,
-    .plus-btn {
+    #home-link{
         width: 25px;
         height: 25px;
         padding: 10px;
@@ -1671,13 +1672,6 @@ li {
         overflow-x: auto;
     }
 
-    #home-link,
-    .plus-btn {
-        width: 22px;
-        height: 22px;
-        padding: 10px;
-        flex-shrink: 0;
-    }
 
     #about-link,
     #projects-link,
@@ -1783,4 +1777,22 @@ li {
         margin-left: -25px;
     }
 
+
+    .plus-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+        padding: 0;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .dropdown-menu {
+        width: 140px;
+        right: 0;
+    }
+
+    .dropdown-menu a {
+        font-size: 16px;
+        padding: 10px;
+    }
 }
