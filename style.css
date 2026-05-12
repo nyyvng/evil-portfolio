@@ -559,7 +559,8 @@ main h1 a {
 .pawpal,
 .fcz,
 .to-do,
-.budget {
+.budget,
+.zoo-case {
     background-color: var(--muted-teal);
     padding: 20px;
     display: flex;
@@ -578,11 +579,21 @@ main h1 a {
     border-radius: 30px;
 }
 
+.project-img {
+    width: 290px;
+    height: 220px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 7px solid var(--granite);
+    border-radius: 30px;
+}
+
 .bioshield h3,
 .pawpal h3,
 .fcz h3,
 .to-do h3,
-.budget h3 {
+.budget h3,
+.zoo-case h3 {
     border-right: 4px solid white;
     padding-right: 20px;
     margin: 0;
@@ -594,7 +605,8 @@ main h1 a {
 .pawpal-top img,
 .fcz-top img,
 .todo-top img,
-.budgetcalc-top img {
+.budgetcalc-top img,
+.zoo-case-top img {
     height: auto;
 }
 
@@ -608,6 +620,7 @@ main h1 a {
 .fcz:hover,
 .to-do:hover,
 .budget:hover,
+.zoo-case:hover,
 .project-desc {
     cursor: pointer;
     transform: scale(1.01);
@@ -1193,6 +1206,98 @@ main h1 a {
 
 
 
+/* ZOO CASE THING BELOW */
+#zoo-case {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#zoo-case h2 {
+    text-align: center;
+    font-size: 42px;
+    color: var(--dark-amethyst);
+    margin-bottom: 50px;
+}
+
+#zoo-case h2 a {
+    text-decoration: none;
+    color: var(--dark-amethyst);
+}
+
+.zoo-case-top {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.zoo-case-top img {
+    width: 500px;
+    height: 300px;
+    border: 4px solid var(--granite);
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.zoo-case-desc {
+    font-size: 22px;
+    line-height: 1.6;
+    color: var(--dark-amethyst);
+    margin: 0;
+    max-width: 550px;
+}
+
+#zoo-case-experience {
+    padding: 20px 40px 80px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#zoo-case-experience h2 {
+    font-size: 34px;
+    color: var(--dark-amethyst);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#zoo-case-experience p {
+    font-size: 22px;
+    line-height: 1.8;
+    color: var(--dark-amethyst);
+}
+
+#zoo-case-experience li {
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+#zoo-case-experience img {
+    width: 500px;
+    height: 300px;
+    display: block;
+    margin: 40px auto;
+    border: 4px solid var(--granite);
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1462,7 +1567,8 @@ li {
     .pawpal,
     .fcz,
     .to-do,
-    .budget {
+    .budget,
+    .zoo-case {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -1475,11 +1581,17 @@ li {
         height: 130px;
     }
 
+    .project-img {
+    width: 160px;
+    height: 130px;
+}
+
     .bioshield h3,
     .pawpal h3,
     .fcz h3,
     .to-do h3,
-    .budget h3 {
+    .budget h3,
+    .zoo-case h3 {
         font-size: 20px;
         padding-right: 0;
         border-right: none;
@@ -1508,7 +1620,8 @@ li {
     .pawpal-top,
     .fcz-top,
     .todo-top,
-    .budgetcalc-top {
+    .budgetcalc-top,
+    .zoo-case-top {
         gap: 15px;
         flex-direction: column;
     }
@@ -1517,7 +1630,8 @@ li {
     .pawpal-top img,
     .fcz-top img,
     .todo-top img,
-    .budgetcalc-top img {
+    .budgetcalc-top img,
+    .zoo-case-top img {
         width: 300px;
         height: 170px;
     }
@@ -1526,7 +1640,8 @@ li {
     .pawpal-desc,
     .fcz-desc,
     .todo-desc,
-    .budgetcalc-desc {
+    .budgetcalc-desc,
+    .zoo-case-desc {
         font-size: 16px;
     }
 
@@ -1534,7 +1649,8 @@ li {
     #pawpal,
     #fcz,
     #todo,
-    #budgetcalc {
+    #budgetcalc,
+    #zoo-case {
         padding: 20px 10px;
     }
 
@@ -1543,7 +1659,8 @@ li {
     #pawpal-experience,
     #fcz-experience,
     #todo-experience,
-    #budgetcalc-experience {
+    #budgetcalc-experience,
+    #zoo-case-experience {
         padding: 15px 10px 40px;
     }
 
@@ -1551,7 +1668,8 @@ li {
     #pawpal-experience img,
     #fcz-experience img,
     #todo-experience img,
-    #budgetcalc-experience img {
+    #budgetcalc-experience img,
+    #zoo-case-experience img {
         width: 350px;
         height: 160px;
     }
@@ -1560,7 +1678,8 @@ li {
     #pawpal-experience h2,
     #fcz-experience h2,
     #todo-experience h2,
-    #budgetcalc-experience h2 {
+    #budgetcalc-experience h2,
+    #zoo-case-experience h2 {
         font-size: 22px;
     }
 
@@ -1568,14 +1687,16 @@ li {
     #pawpal h2,
     #fcz h2,
     #todo h2,
-    #budgetcalc h2 {
+    #budgetcalc h2,
+    #zoo-case h2 {
         font-size: 22px;
     }
 
     #bioshield a,
     #pawpal a,
     #todo a,
-    #budgetcalc a {
+    #budgetcalc a,
+    #zoo-case a {
         font-size: 25px;
     }
 
@@ -1585,11 +1706,13 @@ li {
     #fcz-experience p,
     #todo-experience p,
     #budgetcalc-experience p,
+    #zoo-case-experience p,
     #bioshield-experience li,
     #pawpal-experience li,
     #fcz-experience li,
     #todo-experience li,
-    #budgetcalc-experience li {
+    #budgetcalc-experience li,
+    #zoo-case-experience li {
         font-size: 16px;
         line-height: 1.6;
     }
