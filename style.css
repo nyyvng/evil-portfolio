@@ -165,7 +165,8 @@ img {
     background-color: var(--muted-teal);
 }
 
-.dropdown:hover .dropdown-menu {
+
+.show-menu {
     display: flex;
 }
 
