@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naylia Vang | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
     </style>
@@ -22,13 +23,22 @@
 
         <header>
             <nav>
-                <a class="nav-link" id="home-link" href="index.html"><img src="home-icon.png"></a>
-                <a class="nav-link" id="about-link" href="abtme.html">About Me</a>
-                <a class="nav-link" id="projects-link" href="projects.html">Projects</a>
-                <a class="nav-link" id="contact-link" href="contact.html">Contact</a>
-                <div class="plus-btn">+</div>
+                <nav>
+                    <a class="nav-link" id="home-link" href="index.html"><img src="home-icon.png"></a>
+                    <a class="nav-link" id="about-link" href="abtme.html">About Me</a>
+                    <a class="nav-link" id="projects-link" href="projects.html">Projects</a>
+                    <a class="nav-link" id="contact-link" href="contact.html">Contact</a>
+
+                    <div class="dropdown">
+                        <button class="plus-btn">+</button>
+                        <div class="dropdown-menu">
+                            <a href="resume.html">Resume</a>
+                        </div>
+                    </div>
+                </nav>
             </nav>
         </header>
+
     </section>
 
     <section class="foldercover">
@@ -42,13 +52,14 @@
 
             <div id="prj" class="prj">
                 <h2>Projects</h2>
-                <p>Coding projects that I’ve done in my CART lab. Click on the title of the projects to learn more about them. Check it out!</p>
+                <p>Coding projects that I’ve done in my CART lab. Click on the title of the projects to learn more about
+                    them. Check it out!</p>
             </div>
 
 
             <section class="projects">
 
-                <div class="bioshield">
+                <div class="bioshield  scroll-animate">
                     <img id="project-img" src="bioshield.png">
                     <h3><a href="bioshield.html">BioShield Project</a></h3>
                     <p class="project-desc">First understanding of how to develop a marketing website. This was a
@@ -59,7 +70,7 @@
                         customers,
                         and using AI generated background for this fake advertisement.</p class="project-desc">
                 </div>
-                <div class="pawpal">
+                <div class="pawpal  scroll-animate">
                     <img id="project-img" src="pawpal.png">
                     <h3><a href="pawpal.html">PawPal</a></h3>
                     <p class="project-desc">Class assigned project of creating a Pet Wellness Tracking App. This project
@@ -76,7 +87,7 @@
                         website.
                     </p class="project-desc">
                 </div>
-                <div class="fcz">
+                <div class="fcz  scroll-animate">
                     <img id="project-img" src="fcz.png">
                     <h3><a href="fcz.html">Fresno Chaffee Zoo Enrichment App</a></h3>
                     <p class="project-desc">We reached out to the Fresno Chaffee Zoo in which they needed an enrichment
@@ -89,7 +100,7 @@
                         from
                         October to December, and later we refined it in January.</p class="project-desc">
                 </div>
-                <div class="to-do">
+                <div class="to-do  scroll-animate">
                     <img id="project-img" src="to-do.png">
                     <h3><a href="todo.html">To-Do List Project</a></h3>
                     <p class="project-desc">Built an interactive, functional, to-do app using HTML, CSS, and Javascript.
@@ -104,7 +115,7 @@
                         off
                         to distinguish them from active tasks.</p class="project-desc">
                 </div>
-                <div class="budget">
+                <div class="budget  scroll-animate">
                     <img id="project-img" src="budget.png">
                     <h3><a href="budgetcalc.html">Budget Calculator</a></h3>
                     <p class="project-desc">We collaborated with EECU in which they wanted a budget calculator that

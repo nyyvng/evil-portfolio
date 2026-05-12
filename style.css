@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Quicksand:wght@300..700&family=Teachers:wght@400..800&display=swap');
+
 :root {
     --mint-cream: #f0f7f4;
     --dark-amethyst: #0c0a3e;
@@ -117,43 +119,89 @@ img {
 
 .plus-btn {
     background-color: var(--honeydew);
-    height: 35px;
-    width: 35px;
-    padding: 15px;
+    width: 65px;
+    height: 65px;
     border-radius: 10px 10px 0 0;
     display: flex;
+    align-items: center;
     justify-content: center;
-    font-weight: bolder;
+    font-size: 35px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--granite);
+    width: 260px;
+    display: none;
+    flex-direction: column;
+    border-radius: 0 0 18px 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+
+    padding: 15px;
+
+    font-size: 30px;
+
+    transition: 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--muted-teal);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
 }
 
 .plus-btn:hover {
     cursor: pointer;
     transform: scale(1.15);
     transition: 0.5s;
+    background-color: var(--mint-cream);
 }
 
 #home-link:hover {
     cursor: pointer;
     transform: scale(1.15);
     transition: 0.5s;
+    background-color: var(--mint-cream);
 }
 
 #about-link:hover {
     cursor: pointer;
     transform: scale(1.1);
     transition: 0.5s;
+    background-color: var(--granite);
 }
 
 #projects-link:hover {
     cursor: pointer;
     transform: scale(1.1);
     transition: 0.5s;
+    background-color: var(--muted-teal);
 }
 
 #contact-link:hover {
     cursor: pointer;
     transform: scale(1.1);
     transition: 0.5s;
+    background-color: var(--granite);
 }
 
 
@@ -261,23 +309,18 @@ main h1 a {
     font-size: 20px;
 }
 
-#ab { /* does not work for now */
-    view-timeline: ab;
-    animation-timeline: ab 1s ease-in-out;
-    animation-name: fadeIn;
-    animation-fill-mode: both;
-    animation-duration: 1s;
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 35%;
+}
 
-    @keyframes ab {
-        from {
-            opacity: 0;
-            transform: scaleX(0);
-        }
-
-        to {
-            opacity: 1;
-            transform: scaleX(1);
-        }
+@keyframes fade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -1571,24 +1614,24 @@ li {
     }
 
     .summary p {
-        font-size: clamp(13px, 5px, 0px);
+        font-size: clamp(13px, 2vw, 16px);
 
     }
 
     .left-side {
-        font-size: clamp(13px, 5px, 0px);
+        font-size: clamp(13px, 2vw, 16px);
     }
 
     .right-side {
-        font-size: clamp(13px, 5px, 0px);
+        font-size: clamp(13px, 2vw, 16px);
     }
 
     .projects {
-        font-size: clamp(13px, 5px, 0px);
+        font-size: clamp(13px, 2vw, 16px);
     }
 
     .bottom {
-        font-size: clamp(13px, 5px, 0px);
+        font-size: clamp(13px, 2vw, 16px);
     }
 
 
@@ -1713,7 +1756,7 @@ li {
     }
 
     .bottom-nav p {
-        font-size: 15px clamp(1rem, 2.5vw, 2rem);
+        font-size: clamp(1rem, 2.5vw, 20px);
         line-height: 1.8;
         max-width: 100%;
     }
