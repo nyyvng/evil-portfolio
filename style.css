@@ -169,35 +169,30 @@ img {
 
 .plus-btn:hover {
     cursor: pointer;
-    transform: scale(1.15);
     transition: 0.5s;
     background-color: var(--mint-cream);
 }
 
 #home-link:hover {
     cursor: pointer;
-    transform: scale(1.15);
     transition: 0.5s;
     background-color: var(--mint-cream);
 }
 
 #about-link:hover {
     cursor: pointer;
-    transform: scale(1.1);
     transition: 0.5s;
     background-color: var(--granite);
 }
 
 #projects-link:hover {
     cursor: pointer;
-    transform: scale(1.1);
     transition: 0.5s;
     background-color: var(--muted-teal);
 }
 
 #contact-link:hover {
     cursor: pointer;
-    transform: scale(1.1);
     transition: 0.5s;
     background-color: var(--granite);
 }
@@ -560,7 +555,8 @@ main h1 a {
 .fcz,
 .to-do,
 .budget,
-.zoo-case {
+.zoo-case,
+.adventstory {
     background-color: var(--muted-teal);
     padding: 20px;
     display: flex;
@@ -593,7 +589,8 @@ main h1 a {
 .fcz h3,
 .to-do h3,
 .budget h3,
-.zoo-case h3 {
+.zoo-case h3,
+.adventstory h3 {
     border-right: 4px solid white;
     padding-right: 20px;
     margin: 0;
@@ -606,7 +603,8 @@ main h1 a {
 .fcz-top img,
 .todo-top img,
 .budgetcalc-top img,
-.zoo-case-top img {
+.zoo-case-top img,
+.adventstory-top img {
     height: auto;
 }
 
@@ -621,6 +619,11 @@ main h1 a {
 .to-do:hover,
 .budget:hover,
 .zoo-case:hover,
+.adventstory:hover {
+    background-color: var(--granite);
+    transition: 0.5s;
+    cursor: pointer;
+}
 .project-desc {
     cursor: pointer;
     transform: scale(1.01);
@@ -1206,6 +1209,114 @@ main h1 a {
 
 
 
+
+
+/* POKEMON ADEVNTURE GAME STUFF BELOW */
+#adventstory {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#adventstory h2 {
+    text-align: center;
+    font-size: 42px;
+    color: var(--dark-amethyst);
+    margin-bottom: 50px;
+}
+
+#adventstory h2 a {
+    text-decoration: none;
+    color: var(--dark-amethyst);
+}
+
+.adventstory-top {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.adventstory-top img {
+    width: 500px;
+    height: 300px;
+    border: 4px solid var(--granite);
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.adventstory-desc {
+    font-size: 22px;
+    line-height: 1.6;
+    color: var(--dark-amethyst);
+    margin: 0;
+    max-width: 550px;
+}
+
+#adventstory-experience {
+    padding: 20px 40px 80px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#adventstory-experience h2 {
+    font-size: 34px;
+    color: var(--dark-amethyst);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#adventstory-experience p {
+    font-size: 22px;
+    line-height: 1.8;
+    color: var(--dark-amethyst);
+}
+
+#adventstory-experience li {
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+#adventstory-experience img {
+    width: 500px;
+    height: 200px;
+    display: block;
+    margin: 40px auto;
+    border: 4px solid var(--granite);
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ZOO CASE THING BELOW */
 #zoo-case {
     padding: 40px;
@@ -1568,7 +1679,8 @@ li {
     .fcz,
     .to-do,
     .budget,
-    .zoo-case {
+    .zoo-case,
+    .adventstory {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -1591,7 +1703,8 @@ li {
     .fcz h3,
     .to-do h3,
     .budget h3,
-    .zoo-case h3 {
+    .zoo-case h3,
+    .adventstory h3 {
         font-size: 20px;
         padding-right: 0;
         border-right: none;
@@ -1621,7 +1734,8 @@ li {
     .fcz-top,
     .todo-top,
     .budgetcalc-top,
-    .zoo-case-top {
+    .zoo-case-top,
+    .adventstory-top {
         gap: 15px;
         flex-direction: column;
     }
@@ -1631,7 +1745,8 @@ li {
     .fcz-top img,
     .todo-top img,
     .budgetcalc-top img,
-    .zoo-case-top img {
+    .zoo-case-top img,
+    .adventstory-top img {
         width: 300px;
         height: 170px;
     }
@@ -1641,7 +1756,8 @@ li {
     .fcz-desc,
     .todo-desc,
     .budgetcalc-desc,
-    .zoo-case-desc {
+    .zoo-case-desc,
+    .adventstory-desc {
         font-size: 16px;
     }
 
@@ -1650,7 +1766,8 @@ li {
     #fcz,
     #todo,
     #budgetcalc,
-    #zoo-case {
+    #zoo-case,
+    #adventstory {
         padding: 20px 10px;
     }
 
@@ -1660,7 +1777,8 @@ li {
     #fcz-experience,
     #todo-experience,
     #budgetcalc-experience,
-    #zoo-case-experience {
+    #zoo-case-experience,
+    #adventstory-experience {
         padding: 15px 10px 40px;
     }
 
@@ -1669,7 +1787,8 @@ li {
     #fcz-experience img,
     #todo-experience img,
     #budgetcalc-experience img,
-    #zoo-case-experience img {
+    #zoo-case-experience img,
+    #adventstory-experience img {
         width: 350px;
         height: 160px;
     }
@@ -1679,7 +1798,8 @@ li {
     #fcz-experience h2,
     #todo-experience h2,
     #budgetcalc-experience h2,
-    #zoo-case-experience h2 {
+    #zoo-case-experience h2,
+    #adventstory-experience h2 {
         font-size: 22px;
     }
 
@@ -1688,7 +1808,8 @@ li {
     #fcz h2,
     #todo h2,
     #budgetcalc h2,
-    #zoo-case h2 {
+    #zoo-case h2,
+    #adventstory h2 {
         font-size: 22px;
     }
 
@@ -1696,7 +1817,8 @@ li {
     #pawpal a,
     #todo a,
     #budgetcalc a,
-    #zoo-case a {
+    #zoo-case a,
+    #adventstory a {
         font-size: 25px;
     }
 
@@ -1712,7 +1834,9 @@ li {
     #fcz-experience li,
     #todo-experience li,
     #budgetcalc-experience li,
-    #zoo-case-experience li {
+    #zoo-case-experience li,
+    #adventstory-experience p,
+    #adventstory-experience li {
         font-size: 16px;
         line-height: 1.6;
     }
